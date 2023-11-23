@@ -15,7 +15,7 @@ def sin(number):
     """calculating the values of sin(x) for n amount of number equally distributed between 0 and 2pi
 
     Args:
-        number (integer): 0 - 2pi equally devided by this amount 
+        number (integer): creates x values between 0 - 2pi equally devided by this number 
     """
     x = np.linspace(0, 2 * pi, number)
     df = pd.DataFrame({"x": x, "sin (x)": np.sin(x)})
